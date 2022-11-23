@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <link rel="stylesheet" type="text/css" href="rbue778.css">
+        <script type="text/javascript" src ="rbue778.js"></script>
+        <link rel="icon" href="http://localhost:5000/logo-192x192.png">
+        <title>Southern Hemisphere Institute of Technology</title>
+    </head>
+    
+    <body>
+        <header>
+            <img class="small_logo" src=http://localhost:5000/api/GetLogo alt="small_Logo">  
+            <div class="userinfo">
+                <h3>Current user: </h3><h3 id="username">Guest</h3>
+                <div id="logoutbutton">
+                    <button id="logoutbtn" onclick="logoutbutton()">Logout</button>
+                </div>          
+            </div>
+        </header>
+
+        <nav>
+            <button class="btn" onclick="showHome()">Home</button>
+            <button class="btn" onclick="showStaff()">Staff</button>
+            <button class="btn" onclick="showShop()">Shop</button>
+            <button class="btn" onclick="showGuest()">Guest Book</button>
+            <button class="btn" onclick="showRegistration()">Register/Login</button>
+            
+        </nav>
+
+        <!--- HOME SECTION --->
+        <div id="home">
+            <section>
+                <img class="big_logo" src=http://localhost:5000/api/GetLogo alt="Full_Logo">
+                <p class="introduction_header">
+                   <u><b>Welcome to Southern Hemisphere Institute of Technology</b></u> 
+                </p>
+                <p class="introduction_body">
+                    
+                    One of New Zealands top higher education establishments providing both top class staff and top class premium facilities.
+                    We pride ourselves in providing for our community by giving them every equipment and knowledge they may require. 
+                    If you want: best of the best education, an accepting community, premium facilities, and unlock as much of your potential as
+                    possible, then come and join us today.
+    
+                </p>
+                <br><br>
+                <hr size="3" width="100%" color=#f3d425>  
+            </section>
+    
+            <div class="disclamers">
+                <img class="winnie" src=https://media.pri.org/s3fs-public/styles/story_main/public/story/images/Winnie.jpg alt="winnie">
+            </div>
+            <div class="disclamerbody">
+                <p>
+                    Due to unfortunate circumtances we decided to keep all offerings strictly online for the safety of our staff and students.
+                </p>
+            </div>
+        <footer>
+            <br><br><br><br>
+            <p>© All rights reserved v1 </p>
+        </footer>
+        </div>
+        <!--- HOME SECTION --->
+
+        <!--- Staff SECTION --->
+        <div id="staff">
+            <section>
+                <br><br><br><br>
+                <p class="introduction_header">
+                   <u><b>Staff</b></u> 
+                </p>
+                <hr size="3" width="100%" color=#f3d425>
+                
+                <div id='staffinfo'>
+                </div>
+
+            </section>
+
+        </div>
+        <!--- Staff SECTION --->
+
+        <!--- Shop SECTION --->
+        <div id="shop">
+            <section>
+                <br><br><br><br>
+                <p class="introduction_header">
+                   <u><b>Shop</b></u> 
+                </p>
+                <hr size="3" width="100%" color=#f3d425> 
+
+                <div class="productsections Water Bottle"id="Water Bottle">
+                    <img class= "productphotos" id="Water Bottle" src=http://localhost:5000/api/GetItemPhoto/156571347 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Water Bottle</td> <td> 
+                            <tr> <td> Description: Brushed stainless steel water bottle. Soft matt finish. Dishwasher-proof.</td> <td> 
+                            <tr> <td> Price: 10.99</td> <td> 
+                        </table> 
+                        
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('156571347')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Coffee Mug"id="Coffee Mug">
+                    <img class= "productphotos" id="Coffee Mug" src=http://localhost:5000/api/GetItemPhoto/156572458 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Coffee Mug</td> <td> 
+                            <tr> <td> Description: White coffee mug. Stain-resistant brown interior. Dishwasher-proof. Make a lasting statement at the coffee club!</td> <td> 
+                            <tr> <td> Price: 8.99 </td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('156572458')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Women's hat"id="Women's hat">
+                    <img class= "productphotos" id="Women's hat" src=http://localhost:5000/api/GetItemPhoto/165773457 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Women's hat</td> <td> 
+                            <tr> <td> Description: Women's printed cotton hat. Not suitable for machine wash.</td> <td> 
+                            <tr> <td> Price: 12.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('165773457')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Women's Tee"id="Women's Tee">
+                    <img class= "productphotos" id="Women's Tee" src=http://localhost:5000/api/GetItemPhoto/324284878 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Women's Tee</td> <td> 
+                            <tr> <td> Description: Bright orange Tee for women. Made from woven cotton. Machine washable.</td> <td> 
+                            <tr> <td> Price: 14.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('324284878')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Umbrella"id="Umbrella">
+                    <img class= "productphotos" id="Umbrella" src=http://localhost:5000/api/GetItemPhoto/325183578 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Umbrella</td> <td> 
+                            <tr> <td> Description: Orange umbrella. Modern styling. Unisex design. UV-resistant fabric, allowing use as parasol.</td> <td> 
+                            <tr> <td> Price: 2.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('325183578')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+ 
+                <div class="productsections Women's Black Top"id="Women's Black Top">
+                    <img class= "productphotos" id="Women's Black Top" src=http://localhost:5000/api/GetItemPhoto/412572458 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Women's Black Top</td> <td> 
+                            <tr> <td> Description: Black top. Fade-resistant polyester, containing 50% recycled material.</td> <td> 
+                            <tr> <td> Price: 14.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('412572458')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Men's Printed Tee"id="Men's Printed Tee">
+                    <img class= "productphotos" id="Men's Printed Tee" src=http://localhost:5000/api/GetItemPhoto/412584658 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Men's Printed Tee</td> <td> 
+                            <tr> <td> Description: Printed Tee with front pocket. Polycotton and machine washable.</td> <td> 
+                            <tr> <td> Price: 14.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('412584658')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Men's White Tee"id="Men's White Tee">
+                    <img class= "productphotos" id="Men's White Tee" src=http://localhost:5000/api/GetItemPhoto/413632458 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Men's White Tee</td> <td> 
+                            <tr> <td> Description: Plain white tee with logo. Stand out in the crowd. Machine washable pure cotton.</td> <td> 
+                            <tr> <td> Price: 14.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('413632458')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Children's toy"id="Children's toy">
+                    <img class= "productphotos" id="Children's toy" src=http://localhost:5000/api/GetItemPhoto/522163231 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Children's toy</td> <td> 
+                            <tr> <td> Description: Our mascot Pooh riding high. Child-safe plastic. Not suitable for children under the age of 3.</td> <td> 
+                            <tr> <td> Price: 14.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('522163231')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+
+                <div class="productsections Men's Cap"id="Men's Cap">
+                    <img class= "productphotos" id="Men's Cap" src=http://localhost:5000/api/GetItemPhoto/565783357 alt="productphoto">
+                    <form> 
+                        <table class="productdesc"> 
+                            <tr> <td> Name: Men's Cap</td> <td> 
+                            <tr> <td> Description: Woven high-strength cotton cap. Beige. UV-resistant. Not suitable for machine wash.</td> <td> 
+                            <tr> <td> Price: 12.99</td> <td> 
+                        </table> 
+                    </form> 
+                    <button class="buybtn" onclick="buybutton('565783357')">Buy</button>
+                    <hr size="2" width="100%" color=#747474> 
+                </div> 
+                <br><br><br><br>
+
+
+            </section>
+
+        </div>
+        <!--- Shop SECTION --->
+
+        <!--- Register SECTION --->
+        <div id="registration">
+            <section>
+                <br><br><br><br>
+                <p class="introduction_header">
+                   <u><b>Register/Login</b></u> 
+                </p>
+               
+                <hr size="3" width="100%" color=#f3d425>  
+
+                <form id="logform"> 
+                    <table class="register"> 
+                        <tr> <td> *Username: </td> <td> <input type=”text” id ='userfield' class="username"placeholder= 'e.g John'> </td> </tr>
+                        <tr> <td> *Password: </td> <td> <input type=”text” id ='passfield' class="password"placeholder= 'e.g doe123'> </td> </tr> 
+                        <tr> <td> Address: </td> <td> <input type=”text” id ='adfield' class="address" placeholder= 'For registration only'> </td> </tr> 
+                    </table> 
+                </form> 
+                <div class="registerbtn">
+                    <button id="regbtn" onclick="registerbutton()">Register</button>
+                    <button id="logbtn" onclick="loginbutton()">Login</button>
+                </div>
+
+
+                
+            </section>
+
+        </div>
+        <!--- Register SECTION --->
+
+        <!--- Guest SECTION --->
+        <div id="guest">
+            <section>
+                <br><br><br><br>
+                <p class="introduction_header">
+                   <u><b>Guest Book</b></u>        
+                <hr size="3" width="100%" color=#f3d425>  
+                <br>
+                <h1>
+                    Leave a mark in our establishment by commenting in our guest book.
+                </h1>
+                <h2>
+                    Please be respectful to others.
+                </h2>
+                <br>
+                <div class="commentsection">
+                    <input type=”text” class="commentbox" placeholder= 'Write comment here'>
+                    <p>
+                        Your name:
+                    </p>
+                    <input type=”text” class="namebox" placeholder= 'John Doe'>
+                    <button id="combtn" onclick="commentbutton()">Submit</button>
+                </div>
+                <br>
+                <hr size="3" width="100%" color=#f3d425>  
+                <br>
+                <h1>
+                    Recent Entries
+                </h1>
+                <iframe src="http://localhost:5000/api/GetComments" title="Recent Entries" id ="commentiframe"></iframe>
+            </section>
+
+        </div>
+        <!--- Guest SECTION --->
+
+
+        
+    </body>
+    
+    
+</html>
